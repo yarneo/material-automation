@@ -25,7 +25,7 @@ class GithubAppConfig {
   let githubAPIBaseURL = "https://api.github.com"
 
   /// The GitHub app ID that will be used for all authentication requests.
-  let githubAppId = 10819
+  let githubAppId = 11993
 
   /// The hello message returned by the server's /hello endpoint.
   let helloMessage = "Hello from Material Automation!"
@@ -38,7 +38,7 @@ class GithubAppConfig {
 
   init() {
     self.pemFilePath =
-        GithubAppConfig.projectRootPath.appendingPathComponent("GithubKey.pem").path
+        GithubAppConfig.projectRootPath.appendingPathComponent("GithubKeyDebug.pem").path
   }
 
   static private let projectRootPath: URL = {

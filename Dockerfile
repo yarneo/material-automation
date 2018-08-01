@@ -30,7 +30,7 @@ EXPOSE 8080
 RUN mkdir /root/MaterialAutomation
 ADD Package.swift /root/MaterialAutomation
 ADD Sources /root/MaterialAutomation/Sources
-ADD GithubKey.pem /root/MaterialAutomation
+ADD GithubKeyDebug.pem /root/MaterialAutomation
 
 # Build the app
 RUN cd /root/MaterialAutomation && ls -la && cd Sources && ls -la

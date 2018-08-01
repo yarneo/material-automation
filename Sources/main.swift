@@ -114,6 +114,8 @@ routes.add(method: .post, uri: "/webhook", handler: { request, response in
       // Pull Request either opened or updated.
       LabelAnalysis.addAndFixLabelsForPullRequests(PRData: PRData,
                                                    githubAPI: githubAPI)
+      OwnersAnalysis.mentionCodeOwnersInPR(PRData: PRData,
+                                          githubAPI: githubAPI)
     }
 
     // Add any opened pull requests to the current sprint.
